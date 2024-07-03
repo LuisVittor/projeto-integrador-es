@@ -7,7 +7,7 @@ Este repositório contém a base para criação de um sistema web baseado em HTM
 1. Entre no seu VSCode e clone este repositório.
 2. Abra o terminal e execute o comando `go run .`
 3. Se tudo der certo será exibida uma mensagem: Server rodando na porta 8080
-4. Está no ar! http://localhost:8080
+4. Está no ar! http://localhost:8080/paciente
 
 ### Acesso ao banco de dados
 1. Iniciar o pgAdmin

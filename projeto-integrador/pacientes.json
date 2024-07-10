@@ -1,0 +1,64 @@
+{
+    "pacientes": [
+        {
+            "cpf": "692.698.321-63",
+            "nome": "Noah Marcelo Henry Viana",
+            "data_nasc": "1990-03-17",
+            "celular": "(62) 99697-2416",
+            "sexo": "Masculino",
+            "esta_fumante": true,
+            "faz_uso_alcool": true,
+            "esta_situacao_de_rua": true,
+            "endereco": "Rua das Flores, 123, Bairro Jardim, Cidade Exemplo",
+            "nome_mae": "Maria da Silva Viana"
+        },
+        {
+            "cpf": "331.584.181-00",
+            "nome": "Iago Carlos Augusto Martins",
+            "data_nasc": "1985-03-24",
+            "celular": "(62) 99638-5864",
+            "sexo": "Masculino",
+            "esta_fumante": true,
+            "faz_uso_alcool": false,
+            "esta_situacao_de_rua": true,
+            "endereco": "Avenida Central, 456, Bairro Centro, Cidade Exemplo",
+            "nome_mae": "Ana Maria Martins"
+        },
+        {
+            "cpf": "004.463.681-48",
+            "nome": "Luan Arthur Benício Jesus",
+            "data_nasc": "2001-01-15",
+            "celular": "(62) 98190-4964",
+            "sexo": "Masculino",
+            "esta_fumante": false,
+            "faz_uso_alcool": true,
+            "esta_situacao_de_rua": true,
+            "endereco": "Travessa da Paz, 789, Bairro Alegre, Cidade Exemplo",
+            "nome_mae": "Clara Jesus"
+        },
+        {
+            "cpf": "309.658.491-55",
+            "nome": "Alice Jaqueline Rocha",
+            "data_nasc": "1978-01-10",
+            "celular": "(62) 99647-5080",
+            "sexo": "Feminino",
+            "esta_fumante": true,
+            "faz_uso_alcool": true,
+            "esta_situacao_de_rua": false,
+            "endereco": "Rua das Orquídeas, 321, Bairro Jardim, Cidade Exemplo",
+            "nome_mae": "Rosana Rocha"
+        },
+        {
+            "cpf": "032.635.931-10",
+            "nome": "Juliana Cristiane Fabiana Ramos",
+            "data_nasc": "1982-02-01",
+            "celular": "(62) 98727-6719",
+            "sexo": "Feminino",
+            "esta_fumante": true,
+            "faz_uso_alcool": false,
+            "esta_situacao_de_rua": false,
+            "endereco": "Avenida das Palmeiras, 654, Bairro Verde, Cidade Exemplo",
+            "nome_mae": "Fabiana Ramos"
+        }
+    ]
+}

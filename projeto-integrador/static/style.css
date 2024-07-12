@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #242f9b;
+    background-size: cover;
+    color: #333;
+}
+
+.container, .cabecalho {
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn, .cabecalho button {
+    padding: 10px 15px;
+    background-color: rgba(72, 72, 75, 0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.back-btn:hover, .cabecalho button:hover {
+    background-color: rgba(39, 49, 56, 0.9);
+}
+
+.Tela-Cadastro {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: black;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+.main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label {
+    width: 95%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input,
+.user-input-box select {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 0 10px;
+}
+
+.form-submit-btn {
+    margin-top: 40px;
+}
+
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 140, 255, 0.986);
+    cursor: pointer;
+}
+
+.form-submit-btn input:hover {
+    background: rgba(3, 93, 167, 0.986);
+    color: rgb(255, 255, 255);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.campo {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 80px);
+}
+
+.cabecalho form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cabecalho form input[type="search"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.cabecalho form button {
+    padding: 10px 20px;
+}
+
+@media(max-width: 600px) {
+    .container, .cabecalho {
+        min-width: 280px;
+        padding: 20px;
+    }
+
+    .user-input-box {
+        width: 100%;
+    }
+
+    .main-user-info {
+        max-width: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar {
+        width: 0;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}

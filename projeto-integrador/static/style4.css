@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  body {
+    background-color: #242f9b;
+  }
+  .img-logo {
+    width: 114px;
+    height: 113px;
+    top: 30px;
+    left: 6px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  input {
+    width: 486px;
+    height: 85px;
+    background: #f7f7f7;
+    box-shadow: -4px 4px 18px rgb(0 0 0 / 9%);
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    background: #0d99ff;
+    box-shadow: -4px 4px 18px rgb(0 0 0 / 9%);
+    border-radius: 10px;
+    width: 537px;
+    height: 67px;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  
+  .distanciar-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .button-voltar {
+    width: 97px;
+    height: 41px;
+    flex-shrink: 0;
+    background: rgba(37, 36, 36, 0.8);
+    position: absolute;
+    top: 65px;
+    left: 120px;
+  }
+  
+  .button-continuar {
+    width: 309px;
+    height: 76px;
+    flex-shrink: 0;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+  
+  .Digite-código {
+    color: var(--Colour-Neutral-8, #fff);
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.475px;
+    margin-top: 80px;
+  }
+  
+  .circulo-superior {
+    position: relative;
+  }
+  
+  .circulo-inferior {
+    margin-left: 1500px;
+  }
+
+  a{
+    text-decoration: none;
+  }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Nova Consulta</title>
+    <link rel="stylesheet" href="static/style1.css">
+</head>
+
+<body>
+    <header>
+        <img src="/static/imagens/file.png" alt="logo-acs">
+        <a href="/index"><button class="voltar">Voltar</button></a>
+        <h1>Nova Consulta</h1>
+        <img src="/static/imagens/file2.png" alt="logo-acs">
+    </header>
+
+    <main>
+       <form action="#">
+            <h2>Dados do paciente</h2>
+            <div class="campo">
+                <label for="nome"><strong>Nome completo:</strong></label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campo">
+                <label for="cpf"><strong>CPF:</strong></label>
+                <input type="text" id="cpf" name="cpf" required>
+            </div>
+            <div class="campo">
+                <label for="especialista"><strong>Especialista:</strong></label>
+                <select id="especialista" name="especialista" required>
+                    <option value="especialista">Selecione...</option>
+                    <option value="clinicogeral">Clínico geral</option>
+                    <option value="cirurgiaodentista">Cirurgião Dentista</option>
+                    <option value="odontopediatra">Odontopediatra</option>
+                    <option value="endodontista">Endodontista</option>
+                    <option value="periodontista">Periodontista</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="data"><strong>Data:</strong></label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="horarios">
+                <h2>Horários disponíveis:</h2>
+                <div class="horario">
+                    <input type="radio" id="horario9" name="horario" value="09:00">
+                    <label for="horario9">09:00 AM</label>
+                </div>
+                <div class="horario">
+                    <input type="radio" id="horario10" name="horario" value="10:00">
+                    <label for="horario10">10:00 AM</label>
+                </div>
+                <div class="horario">
+                    <input type="radio" id="horario14" name="horario" value="14:00">
+                    <label for="horario14">14:00 PM</label>
+                </div>
+                <div class="horario">
+                    <input type="radio" id="horario16" name="horario" value="16:00">
+                    <label for="horario16">16:00 PM</label>
+                </div>
+            </div>
+                <button type="submit" class="agendar">
+                    <strong><a href="/index3">Agendar</a></strong>
+                </button>
+        </form>
+
+
+    </main>
+
+
+    <nav>
+        <div class="barra">
+            <ul>
+                <li><a href="/inicio">Início</a></li>
+                <li><a href="/pacientes">Pacientes</a></li>
+                <li><a href="/index23">Perfil</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

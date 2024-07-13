@@ -1,0 +1,79 @@
+{
+    "pacientes": [
+        {           
+
+           "cpf": "598.437.631-81",
+            "nome": "Antônio Souza Lopes",
+            "data_nasc": "1973-01-01",
+            "celular": "(62) 99814-8320",
+            "sexo": "Masculino",
+            "esta_fumante": true,
+            "faz_uso_alcool": false,
+            "esta_situacao_de_rua": false,
+            "endereco": "Rua R-01, Qd: 01, Lt: 01, S/N, Apartamento: 28, Setor Cental, CEP 74030-090, Microrregião 1, Goiânia",
+            "nome_mae": "Maria Souza Campos"
+        },
+        {
+            "cpf": "123.456.789.10",
+            "nome": "Carlos Eduardo Lima",
+            "data_nasc": "1981-03-24",
+            "celular": "(62) 99638-5864",
+            "sexo": "Masculino",
+            "esta_fumante": false,
+            "faz_uso_alcool": false,
+            "esta_situacao_de_rua": true,
+            "endereco": "Rua AT 1 Unidade 301, Qd:55, Lt:11, Parque Atheneu, CEP 74893781, Goiânia ",
+            "nome_mae": "Ana Maria Martins"
+        },
+        {
+
+            "cpf": "470.531.097-18",
+            "nome": "Thiago Alves",
+            "data_nasc": "1984-01-15",
+            "celular": "(62) 98190-4964",
+            "sexo": "Masculino",
+            "esta_fumante": false,
+            "faz_uso_alcool": true,
+            "esta_situacao_de_rua": false,
+            "endereco": "Rua das Cerejeiras, Parque Industrial João Braz, Qd: 05, Lt: 71 CEP 74483-180, Goiânia ",
+            "nome_mae": "Clara Jesus"
+        },
+        {
+            "cpf": "459.721.037-00",
+            "nome": "Jóse Santos",
+            "data_nasc": "1973-01-10",
+            "celular": "(62) 99647-5080",
+            "sexo": "masculino",
+            "esta_fumante": true,
+            "faz_uso_alcool": true,
+            "esta_situacao_de_rua": false,
+            "endereco": "Rua do Trabalhador 440, Rodoviário, Qd: 27, Lt: 07 CEP 74430-901, Goiânia ",
+            "nome_mae": "Rosana Rocha"
+        },
+        {
+            "cpf": "319.847.577-09",
+            "nome": "Francisco Souza",
+            "data_nasc": "1979-02-01",
+            "celular": "(62) 98727-6719",
+            "sexo": "masculino",
+            "esta_fumante": true,
+            "faz_uso_alcool": true,
+            "esta_situacao_de_rua": true,
+            "endereco": "Rua R 11, Vila Itatiaia, Qd: 14, Lt: 05, CEP 74690-365, Goiânia ",
+            "nome_mae": "Fabiana Ramos"
+        },
+        {
+
+            "cpf": "032.635.931-10",
+            "nome": "Juliana Cristiane Fabiana Ramos",
+            "data_nasc": "1982-02-01",
+            "celular": "(62) 98727-6719",
+            "sexo": "Feminino",
+            "esta_fumante": true,
+            "faz_uso_alcool": false,
+            "esta_situacao_de_rua": false,
+            "endereco": " Rua Angélica , Santa Genoveva, Qd: 33, Lt: 43, CEP 74672160, Goiânia  ",
+            "nome_mae": "Fabiana Ramos"
+        }
+     ]
+ }

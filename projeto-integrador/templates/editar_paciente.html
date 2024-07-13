@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Paciente</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editar Informações do Paciente</h1>
+        <form action="/atualizar-paciente" method="post">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" value="{{.Nome}}" required>
+                </div>
+                <div class="user-input-box">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" value="{{.Cpf}}" readonly>
+                </div>
+                <div class="user-input-box">
+                    <label for="data_nasc">Data de Nascimento:</label>
+                    <input type="date" id="data_nasc" name="data_nasc" value="{{.DataNascimento}}" required>
+                </div>
+                <div class="user-input-box">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="Masculino" {{if eq .Sexo "Masculino"}}selected{{end}}>Masculino</option>
+                        <option value="Feminino" {{if eq .Sexo "Feminino"}}selected{{end}}>Feminino</option>
+                        <option value="Não_Binario" {{if eq .Sexo "Não_Binario"}}selected{{end}}>Não Binário</option>
+                        <option value="Outro" {{if eq .Sexo "Outro"}}selected{{end}}>Outro</option>
+                        <option value="Prefere_Não_Dizer" {{if eq .Sexo "Prefere_Não_Dizer"}}selected{{end}}>Prefere não dizer</option>
+                    </select>
+                </div>
+                <div class="user-input-box">
+                    <label for="nome_mae">Nome da Mãe:</label>
+                    <input type="text" id="nome_mae" name="nome_mae" value="{{.NomeMae}}" required>
+                </div>
+                <div class="user-input-box">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" value="{{.Telefone}}" required>
+                </div>
+                <div class="user-input-box">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" value="{{.Endereco}}" required>
+                </div>
+                <div class="user-input-box">
+                    <label for="esta_fumante">É tabagista:</label>
+                    <input type="checkbox" id="esta_fumante" name="esta_fumante" {{if .EstaFumante}}checked{{end}}>
+                </div>
+                <div class="user-input-box">
+                    <label for="faz_uso_alcool">Faz Uso de Álcool:</label>
+                    <input type="checkbox" id="faz_uso_alcool" name="faz_uso_alcool" {{if .FazUsoAlcool}}checked{{end}}>
+                </div>
+                <div class="user-input-box">
+                    <label for="esta_situacao_rua">Está em Situação de Rua:</label>
+                    <input type="checkbox" id="esta_situacao_rua" name="esta_situacao_rua" {{if .EstaSituacaoRua}}checked{{end}}>
+                </div>
+            </div>
+            <div class="form-submit-btn">
+                <input type="submit" value="Atualizar">
+            </div>
+            <button class="return-btn" onclick="window.location.href='/pacientes'">Voltar para Lista de Pacientes</button>
+        </form>
+    </div>
+</body>
+</html>

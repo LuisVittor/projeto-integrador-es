@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Pacientes</h1>
+        <div class="search-and-filter">
+            <form action="/pacientes" method="get" class="search-form">
+                <input type="search" placeholder="Buscar pelo nome" name="busca" class="campo">
+                <button type="submit">🔍</button>
+            </form>
+            <form action="/pacientes" method="get" class="filter-form">
+                <label>
+                    <input type="checkbox" name="filtro_fumante"> Tabagista
+                </label>
+                <label>
+                    <input type="checkbox" name="filtro_bebe"> Consome bebidas alcoólicas
+                </label>
+                <label>
+                    <input type="checkbox" name="filtro_rua"> Situação de Rua
+                </label>
+                <button type="submit">Filtrar 🔍</button>
+            </form>
+        </div>
+        <button class="back-btn" onclick="window.location.href='/cadastro-paciente'">Cadastrar Novo Paciente</button>
+        <button class="return-btn" onclick="window.location.href='/menu'">Voltar ao Menu</button> <!-- Botão de Voltar -->
+        <table class="patient-table">
+            <thead>
+                <tr>
+                    <th>Nome do Paciente</th>
+                    <th>CPF</th>
+                    <th>Data de Nascimento</th>
+                    <th>Sexo</th>
+                    <th>Nome da Mãe</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                    <th>É tabagista</th>
+                    <th>Faz uso de álcool</th>
+                    <th>Está em Situação de Rua</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{range .Pacientes}}
+                <tr>
+                    <td>{{.Nome}}</td>
+                    <td>{{.Cpf}}</td>
+                    <td>{{.DataNascimento}}</td>
+                    <td>{{.Sexo}}</td>
+                    <td>{{.NomeMae}}</td>
+                    <td>{{.Telefone}}</td>
+                    <td>{{.Endereco}}</td>
+                    {{if .EstaFumante}}
+                    <td>✅</td>
+                    {{else}}
+                    <td>❌</td>
+                    {{end}}
+                    {{if .FazUsoAlcool}}
+                    <td>✅</td>
+                    {{else}}
+                    <td>❌</td>
+                    {{end}}
+                    {{if .EstaSituacaoRua}}
+                    <td>✅</td>
+                    {{else}}
+                    <td>❌</td>
+                    {{end}}
+                    <td>
+                        <button class="edit-btn" onclick="window.location.href='/editar-paciente?cpf={{.Cpf}}'">Editar</button>
+                        <form action="/deletar-paciente" method="post" onsubmit="return confirm('Tem certeza que deseja excluir este paciente?');">
+                            <input type="hidden" name="cpf" value="{{.Cpf}}">
+                            <button type="submit" class="delete-btn">Excluir</button>
+                        </form>
+                    </td>
+                </tr>
+                {{end}}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

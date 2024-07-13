@@ -1,0 +1,712 @@
+body {
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #242f9d;
+color: #333;
+}
+
+h1{
+color: white;
+text-align: center;
+padding: 10px;
+font-weight: bolder;
+}
+
+h2{
+color: white;
+text-align: center;
+font-weight: bolder;
+
+}
+
+h3{
+color: white;
+text-align: center;
+font-size: 1.1em;
+font-weight: bold;
+}
+
+header {
+background-color: #000481;
+color: white;
+padding: 17px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+a{
+text-decoration: none;
+}
+
+button{
+font-weight: bold;
+}
+
+.especial-button{
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+background-color: #0006ae;
+color: white;
+font-weight: bold;
+font-size: 16px;
+cursor: pointer;
+text-align: center;
+width: 48%;
+margin-left: 25%;
+margin-top: 20px;
+}
+
+.especial-button:hover {
+transform: scale(1.04);
+transition-duration: 0.20s;
+}
+
+header h1 {
+margin: 0 auto;
+font-size: 20px;
+}
+
+header button {
+background-color: white;
+color: #0c0073;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+font-size: 20px;
+font-weight: bold;
+}
+
+header button:hover{
+background-color: rgb(203, 203, 255);
+}
+
+header div {
+display: flex;
+align-items: center;
+}
+
+.mostra-paciente{
+padding: 7%;
+margin: 8%;
+background-image: linear-gradient(to top, blue, rgb(30, 0, 99));
+color: white;
+font-weight: bold;
+font-size: 133%;
+border-radius: 10px;
+text-align: center;
+}
+
+.mostra {
+width: 30%;
+padding: 2%;
+margin: 3% auto;
+background-image: linear-gradient(to top, rgb(9, 0, 188), rgb(76, 0, 134));
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+main {
+max-width: 600px;
+margin: 30px auto;
+padding: 30px 70px;
+background-color: white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+margin: 3em auto 6em auto;
+}
+
+main h2 {
+font-size: 24px;
+margin-bottom: 20px;
+color: #0006ae;
+}
+
+main ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+main li {
+background-color: white;
+margin: 10px auto 2px auto;
+padding: 27px;
+border-radius: 5px;
+box-shadow: 1px 1px 1px 1px rgba(0, 5, 77, 0.384);
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+main .nome {
+font-weight: bold;
+font-size: 1.1em;
+}
+
+main .cpf {
+color: #888;
+}
+
+main .data {
+font-style: italic;
+color: #666;
+}
+
+.idade{
+font-weight: bold;
+padding: 6px 6px 6px 0px;
+}
+
+/* input, select {
+width: 100%;
+padding: 10px;
+margin: 5px 0 10px 0;
+border: 1px solid #ccc;
+box-sizing: border-box;
+} */
+
+section {
+margin-bottom: 20px;
+padding: 15px;
+border: 2px solid #0000d3;
+border-radius: 10px;
+}
+
+label {
+display: block;
+margin-top: 10px;
+font-weight: bold;
+}
+
+.radio-buttons, .checkboxes {
+display: flex;
+flex-wrap: wrap;
+gap: 1px;
+margin-top: 10px;
+align-items: center;
+}
+
+.checkboxes div {
+width: 48%;
+display: flex;
+align-items: center;
+}
+
+.radio-buttons label, .checkboxes label {
+margin-right: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+margin-right: 5px;
+}
+
+input[type="number"] {
+-moz-appearance: textfield;
+appearance: textfield;
+text-align: left;
+padding-right: 1.5em;
+width: 50px;
+}
+
+select {
+width: 100%;
+padding: 10px;
+margin-top: 10px;
+border: 1px solid #000080;
+border-radius: 5px;
+}
+
+button[type="submit"] {
+background-color: #0006ae;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+width: 100%;
+font-size: 16px;
+}
+
+button[type="submit"]:hover {
+transform: scale(1.04);
+transition-duration: 0.20s;
+}
+
+.campo, .horarios {
+margin-bottom: 15px;
+}
+
+.campo label {
+display: block;
+margin-bottom: 5px;
+color: #333;
+}
+
+.campo input, .campo select {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+.horarios h2 {
+margin-bottom: 10px;
+}
+
+.horario {
+margin-bottom: 10px;
+}
+
+.horario input {
+margin-right: 10px;
+
+}
+
+.agendar {
+background-color: #0006ae;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+width: 100%;
+border-radius: 4px;
+font-size: 16px;
+transition: background-color 0.3s;
+text-decoration: none;
+}
+
+.agendar strong a{
+color: white;
+}
+
+.agendar button a:hover {
+transform: scale(1.01);
+transition-duration: 0.015s;
+}
+
+.voltar{
+font-size: small; margin-left: 20px;
+text-decoration: none;
+}
+
+.sair{
+font-size: small; margin-left: 20px;
+text-decoration: none;
+}
+
+nav {
+background-color: #000481;
+color: white;
+padding: 10px;
+text-align: center;
+position: fixed;
+width: 100%;
+bottom: 0;
+left: 0;
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+nav ul li {
+margin: 0 15px;
+}
+
+nav ul li a:hover {
+background-color: #0800ff43;
+border-radius: 3px;
+text-decoration: none;
+}
+
+nav ul li a {
+text-decoration: none;
+}
+
+.barra {
+background-color: rgb(255, 255, 255);
+font-weight: bold;
+width: 400px;
+width: auto;
+border-radius: 7px;
+padding: 5px 5px;
+color: white;
+text-decoration: none;
+transition: background-color 0.3s ease, color 0.3s;
+}
+
+nav .barra ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+}
+
+.barra ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+}
+
+.barra li {
+margin: 0 auto;
+font-size: 1.2em;
+}
+
+.success-message {
+text-align: center;
+color: white;
+background-color: #0099ff;
+font-size: 24px;
+font-family: Arial, sans-serif;
+text-align: center;
+padding: 20px;
+margin: 20px auto;
+border-radius: 10px;
+width: fit-content;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav{
+max-width: 1000px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.rinnegan {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 130px;
+gap: 163px;
+font-weight: bold;
+color: blue;
+}
+
+.rinnegan div {
+list-style-type: none;
+background-color: white;
+padding: 10px;
+border-radius: 5px;
+}
+
+.rinnegan div:hover{
+transform: scale(1.1);
+transition-duration: 0.20s;
+}
+
+.rinnegan a {
+text-decoration: none;
+color: black;
+}
+
+.barras-menu aside ul li{
+font-weight: bold;
+font-size: 1em;
+position: relative;
+box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 36, 0.462);
+}
+
+.select-pacientes li{
+box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.245);
+}
+
+.select-pacientes li:hover{
+transform: scale(1.02);
+transition-duration: 0.20s;
+}
+
+.barras-menu aside ul li:hover{
+transform: scale(1.02);
+transition-duration: 0.15s;
+}
+
+.img-centro{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.area-cadastro h2{
+text-align: center;
+}
+
+.finalizar-paciente {
+display: flex;
+justify-content: space-between;
+margin-top: 50px;
+}
+
+.finalizar-paciente button {
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+background-color: #0006ae;
+color: white;
+font-weight: bold;
+font-size: 16px;
+cursor: pointer;
+text-align: center;
+width: 48%;
+}
+
+.finalizar-paciente button a {
+color: white;
+text-decoration: none;
+}
+
+.finalizar-paciente button:hover {
+transform: scale(1.04);
+transition-duration: 0.20s;
+}
+
+.h2-informs-gerais{
+font-size: 200%;
+}
+
+.main-index8{
+width: 50%;
+height: auto;
+}
+
+.main-index8 li{
+text-align: center;
+font-size: 110%;
+font-weight: 700;
+margin: 1em 1em 1em 1em;
+}
+
+.main-index8 span{
+background-color: rgb(0, 0, 143);
+font-weight: bold;
+border-radius: 7px;
+padding: 5px 0px 5px 0px;
+color: white;
+text-decoration: none;
+margin: 1px 1px 1px 1px;
+}
+
+.main-index8 ul a {
+width: 24%;
+padding: 8px;
+border-radius: 5px;
+box-sizing: border-box;
+background-color: blue;
+margin: 0;
+color: white;
+font-weight: bold;
+margin: 1em 1em 1em 1em;
+display: flex;
+text-align: center;
+align-items: center;
+}
+
+.main-index8 a:hover {
+background-color: rgb(0, 0, 143);
+transform: scale(1.1);
+transition-duration: 0.09s;
+text-align: center;
+display: flex;
+transition-duration: 0.20s;
+}
+
+
+.main-index8 abbr{
+font-weight: bolder;
+text-decoration: none;
+text-align: center;
+width: 50%;
+}
+
+.main-index8 .group-info{
+display: flex;
+flex-wrap: wrap;
+}
+
+.main-index8 ul div{
+width: 100%;
+position: relative;
+display: flex;
+justify-content: end; 
+}
+
+.main-index8 ul div a{
+text-align: center;
+}
+
+.h1-index{
+text-align: center;
+color: blue;
+}
+
+.caso-urgencia{
+padding: 6px;
+border-radius: 4px;
+color: white;
+font-weight: bold;
+padding: 5px;
+}
+
+.search-bar {
+display: flex;
+justify-content: center;
+}
+
+.search-bar button {
+width: 70%;
+background-image: linear-gradient(to top, #184543, #56589c);
+padding: 10px 10px;
+border-radius: 5px;
+margin-bottom: 40px;
+text-align: center;
+margin: 0 auto;
+margin-bottom: 30px;
+}
+
+.suporte{
+max-width: 600px;
+margin: 3em auto 6em auto;
+padding: 30px 70px;
+background-color: rgb(10, 0, 82);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+width: auto;
+}
+
+.suporte h3{
+text-align: justify;
+font-weight: 800;
+}
+
+.suporte p{
+color: white;
+text-align: justify;
+}
+
+.suporte label{
+color: white;
+text-align: left;
+width: auto;
+}
+
+.suporte label, input{
+border-right: 2px auto 2px auto;
+padding: 9px;
+padding-right: 10em;
+border-radius: 5px;
+width: auto;
+}
+
+.suporte textarea{
+border-radius: 5px;
+padding: 4em 5em;
+width: auto;
+margin-bottom: 2em;
+}
+
+.perfil{
+background-color: rgb(89, 84, 193);
+border-radius: 20px;
+padding: 7px 7px 16px 30px;
+color: white;
+font-weight: bold;
+font-size: 1.5em;
+}
+
+.zona-perigo button {
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+background-color: #0300ae;
+color: white;
+font-weight: bold;
+font-size: 16px;
+cursor: pointer;
+text-align: center;
+width: 48%;
+}
+
+.zona-perigo a{
+color: white;
+}
+
+.zona-perigo button:hover{
+transform: scale(1.02);
+transition-duration: 0.40s;
+background-color: red;
+}
+
+.button-container {
+display: flex;
+gap: 20px;
+}
+
+.yes-inativar, .no-inativar {
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.no-inativar {
+background-color: #f44336;
+}
+
+.yes-inativar:hover{
+transform: scale(1.02);
+transition-duration: 0.40s;
+background-color: #006a04;
+}
+
+.no-inativar:hover{
+transform: scale(1.02);
+transition-duration: 0.30s;
+background-color: #7d0800;
+}
+
+.p24 p{
+font-size: 2em;
+color: rgb(2, 0, 148);
+}
+
+.informs-cads {
+display: flex;
+justify-content: space-between;
+padding: 40px;
+}
+
+.informs-cads span {
+font-weight: bold;
+}
+
+.nao-urgente span{
+background-color: green;
+}
+
+.pouco-urgente span{
+background-color: rgb(221, 221, 0);
+}
+
+.urgente span{
+background-color: red;
+}
+
+.muito-urgente span{
+background-color: darkred;
+}

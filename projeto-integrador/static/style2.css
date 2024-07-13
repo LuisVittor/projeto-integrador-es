@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E3A8A; 
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2D2DAA; 
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF; 
+    height: 100%;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-tela1 {
+    width: 450px; 
+    height: auto;
+}
+
+.logo-tela2 {
+    width: 250px; 
+    height: auto;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.start-button {
+    background-color: #FFFFFF; 
+    color: #1E3A8A; 
+    border: none;
+    padding: 20px 45px;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #E0E0E0; 
+}
+
+body.login {
+    background-color: #1D1CDE;
+}
+
+.container-login {
+    width: 100%;
+    max-width: 400px;
+    background-color: #2D2DAA;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%; 
+    position: absolute;
+    top: 10px;
+    left: 30px; 
+}
+
+.back-button {
+    background-color: #4D4DFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.back-button:hover {
+    background-color: #FFFFFF; 
+    color: #4D4DFF; 
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    padding: 15px; 
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; 
+    width: 100%; 
+    max-width: 300px; 
+}
+
+.login-form button {
+    padding: 15px; 
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.login-form button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; 
+    position: relative;
+}
+
+.links a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+a{
+    text-decoration: none;
+  }

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style3.css" />
+</head>
+<body>
+    <div class="container">
+        <button class="back-btn" onclick="window.history.back();">Voltar</button>
+        <h1 class="Tela-Cadastro">Informações Pessoais</h1>
+        <form action="/tela2">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="Nome">Nome</label>
+                    <input type="text"
+                    id="Nome"
+                    name="Nome"
+                    placeholder=" Insira seu nome" />
+                </div>
+                <div class="user-input-box">
+                    <label for="Sobrenome">Sobrenome</label>
+                    <input type="text"
+                    id="Sobrenome"
+                    name="Sobrenome"
+                    placeholder=" Insira seu Sobrenome" />
+                </div>
+                <div class="user-input-box">
+                    <label for="Data">Data de nascimento</label>
+                    <input type="text"
+                    id="Data"
+                    name="Data"
+                    placeholder=" Insira sua Data de nascimento" />
+                </div>
+                <div class="user-input-box">
+                    <label for="CPF">CPF</label>
+                    <input type="text"
+                    id="CPF"
+                    name="CPF"
+                    placeholder=" Insira seu CPF" />
+                </div>
+                <div class="user-input-box">
+                    <label for="Telefone">Telefone</label>
+                    <input type="text"
+                    id="Telefone"
+                    name="Telefone"
+                    placeholder=" Insira seu Telefone" />
+                </div>
+            </div>
+            <div class="form-submit-btn">
+                <input type="Submit" value="Enviar Informações">
+            </div>
+        </form>
+    </div>   
+</body>
+</html>
